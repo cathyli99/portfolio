@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy Protfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    
+    <!-- Use Google API Font: Source Sans Pro-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    
+    <!-- Import style.css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Service</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction / Home -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Projects of <strong>ReactJS</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front-End Dev</p>
+        <img class="intro__img" src="img/reactjs_logo03.png" alt="ReactJS_logo">
+    </section>
+
+<!-- My Work -->
+    <div class="my-work-container">
+        <!-- 01 Simple Calculator -->
+        <div class="my-work__img"><img class="portfolio__img intro__img" src="img/simpleCalculator.png" alt="Online Caluculator"></div>
+        <div class="my-work__item">
+            <p>This is a simple arithmetic calculator built with REACT.JS library. </p>
+            <p>Complete the <strong>calculation</strong> function and apply solution to the 
+                <span style="text-decoration: underline;"><strong>=</strong> button</span> click activity.</p>
+            <p><code>
+                calculation = () => {
+                    const result = math.eval((this.state.operations).join(''));
+                    this.setState({operations: [result]});
+                }
+                </code> <br>
+                <span><i style="font-size: smaller;">* Use the existing Math.eval() method with the joined stateful operations.</i></span>
+            </p>
+        </div>
+    </div>
+    <div class="my-work__demo"><a href="https://calculator.cathyli99nz.now.sh/" target="blank" class="btn">Live DEMO</a></div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <a href="mailto:cathyli99nz@gmail.com" class="footer-email__link">cathyli99nz@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.com/cathyli99" class="social-list__link">
+                <i class="fab fa-github"></i> <!-- Icon is copy from Font Awesome (fa) -->
+            </a></li>        
+            <li class="social-list__item"><a href="http://206.189.80.7/index.html" class="social-list__link">
+                <i class="fas fa-globe"></i>
+            </a></li>
+            <li class="social-list__item"><a href="https://zeit.co/dashboard" class="social-list__link">
+                <i class="fab fa-github-alt"></i>
+            </a></li>
+            <li class="social-list__item"><a href="https://www.linkedin.com/in/chia-chen-cathy-li-a949279/" class="social-list__link">
+                <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li class="social-list__item"><a href="https://www.facebook.com/cathy.li.92" class="social-list__link">
+                <i class="fab fa-facebook-square"></i>
+            </a></li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
